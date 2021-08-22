@@ -3,10 +3,7 @@ import 'package:flutter/material.dart';
 class AppIconWidget extends StatelessWidget {
   final image;
 
-  const AppIconWidget({
-    Key? key,
-    this.image,
-  }) : super(key: key);
+  const AppIconWidget({Key? key, this.image}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -21,9 +18,6 @@ class AppIconWidget extends StatelessWidget {
       imageSize = (size.height * 0.20);
     }
 
-    return Image.asset(
-      image,
-      height: imageSize,
-    );
+    return Image.asset(image, height: imageSize);
   }
 }
